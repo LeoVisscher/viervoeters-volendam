@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.animation:after {
+    display: block;
+    content: "";
+    width: inherit;
+    border-bottom: solid 4px rgb(29, 78, 216);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animation:hover:after {
+    transform: scaleX(1);
+}
