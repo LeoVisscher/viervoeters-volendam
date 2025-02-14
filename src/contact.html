@@ -28,7 +28,8 @@
         </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
           <li>
             <a href="index.html"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0">Home</a>
@@ -68,12 +69,71 @@
   <main class="min-h-screen relative bg-gray-200">
     <section class="bg-gray-200 ">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h1 class="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-4xl text-red-700 text-center">Contact</h1>
+        <h1
+          class="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-4xl text-red-700 text-center">
+          Contact</h1>
         <p class="mb-8 lg:mb-16 font-light text-center sm:text-xl">Ben je op zoek naar iemand die je hond
-          kan uitlaten? Neem dan gerust contact met me op. Je kunt contact met mij opnemen via e-mail op cam.visscher@gmail.com of telefonisch via 06-31973302.</p>
+          kan uitlaten? Neem dan gerust contact met me op. Je kunt contact met mij opnemen via e-mail op
+          cam.visscher@gmail.com of telefonisch via 06-31973302.</p>
 
 
         <div id="alert" class="alert d-none mb-4"></div>
+        <form id="form1" name="form1" method="post" action="script.php">
+          <p></p>
+          <table width="575" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="160" align="right" class="formtext">naam :</td>
+              <td width="15" align="center">&nbsp;</td>
+              <td width="400"><input name="naam" type="text" required="required" id="naam" size="60" /></td>
+            </tr>
+            <tr>
+              <td width="160" align="right" class="formtext">adres:</td>
+              <td width="15" align="center">&nbsp;</td>
+              <td width="400"><label><input name="adres" type="text" required="required" id="adres" size="60" /></label>
+              </td>
+            </tr>
+            <tr>
+              <td width="160" align="right" class="formtext">telefoonnummer :</td>
+              <td width="15" align="center">&nbsp;</td>
+              <td width="400"><label><input name="telefoon" type="text" required="required" id="telefoon"
+                    size="60" /></label></td>
+            </tr>
+            <tr>
+              <td width="160" align="right" class="formtext">emailadres :</td>
+              <td width="15" align="center">&nbsp;</td>
+              <td width="400"><label><input name="emailadres" type="text" required="required" id="emailadres"
+                    size="60" /></label></td>
+            </tr>
+            <tr>
+              <td align="right">&nbsp;</td>
+              <td width="15" align="center">&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="160" align="right" valign="top" class="formtext">bestelling plaatsen :</td>
+              <td width="15" align="center" valign="top">&nbsp;</td>
+              <td width="400"><textarea name="omschrijving" cols="62" rows="15" id="omschrijving"></textarea></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top"><input name="beginzin" type="hidden" id="beginzin"
+                  value="jeuh - eindelijk mail via de website" />
+                <input name="subject" type="hidden" id="subject" value="Inkomende mail vanaf de website" />
+              </td>
+              <td width="15" align="center" valign="top">&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">&nbsp;</td>
+              <td width="15" align="center" valign="top">&nbsp;</td>
+              <td><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="submit" name="verzenden" id="verzenden" value="Verzenden" />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="reset" name="annuleren" id="annuleren" value="Annuleren" /></label>
+              </td>
+            </tr>
+          </table>
+        </form>
         <!-- <form id="contactform" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="6dc138ff-c573-479b-bddb-b9b511db675e">
 
@@ -108,29 +168,29 @@
 
 
     <div id="openingstijdenCard"
-    class="md:fixed md:bottom-4 md:right-4 md:max-w-xs bg-red-700 text-white border rounded shadow-md p-4 my-2">
-    <p class="text-sm font-semibold mb-2">Openingsdagen:</p>
-    <p class="text-xs">Maandag, Dinsdag en Donderdag.</p>
-    <p class="text-xs mt-2">Nationale feestdagen gesloten!</p>
-  </div>
+      class="md:fixed md:bottom-4 md:right-4 md:max-w-xs bg-red-700 text-white border rounded shadow-md p-4 my-2">
+      <p class="text-sm font-semibold mb-2">Openingsdagen:</p>
+      <p class="text-xs">Maandag, Dinsdag en Donderdag.</p>
+      <p class="text-xs mt-2">Nationale feestdagen gesloten!</p>
+    </div>
   </main>
 
 
   <footer class="bg-gray-200 py-4">
     <div class="max-w-screen-md mx-auto text-center text-sm text-gray-500">
-        <p>Nathalie Visscher</p>
-        <p>Bootslot 10</p>
-        <p>1132 RM Volendam</p>
-        <p>Mobiel: 06-31973302</p>
-        <p>BTW nr. NL003929407B58</p>
-        <p>KVK nr. 84217030</p>
+      <p>Nathalie Visscher</p>
+      <p>Bootslot 10</p>
+      <p>1132 RM Volendam</p>
+      <p>Mobiel: 06-31973302</p>
+      <p>BTW nr. NL003929407B58</p>
+      <p>KVK nr. 84217030</p>
     </div>
-</footer>
+  </footer>
 
 
   <footer class="bg-white rounded-lg shadow">
 
-    
+
 
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
@@ -151,13 +211,19 @@
         </ul>
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center">© 2024 <a href="#" class="hover:underline">Viervoeters
-          Volendam</a></span>
+      <span class="block text-sm text-gray-500 sm:text-center">Gemaakt door Leo Visscher | © 2025 Alle rechten
+        voorbehouden. </span>
+
     </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
   
 </body>
 
+
+
 </html>
+
